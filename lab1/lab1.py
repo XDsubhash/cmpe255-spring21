@@ -1,6 +1,5 @@
 import pandas as pd
 import pandas as pd
-import numpy as np
 import matplotlib.pyplot as plt
 
 class Solution:
@@ -15,6 +14,7 @@ class Solution:
         # TODO
         # Top x number of entries from the dataset and display as markdown format.
         topx = self.chipo.head(count)
+        print("Top x number of entries from the dataset")
         print(topx.to_markdown())
         
     def count(self) -> int:
@@ -121,16 +121,13 @@ class Solution:
         #x = list_of_prices['item_price']
         #y = list_of_prices['quantity']
         plt.scatter(list_of_prices[:],self.chipo['quantity'],s=50,c='blue')
-
         # 4. set the title and labels.
         #       title: Numer of items per order price
         #       x: Order Price
         #       y: Num Items
-
         plt.xlabel('Order Price')
         plt.ylabel('Num Items')
-
-        plt.title('Numbe of items per order price')
+        plt.title('Number of items per order price')
         plt.show(block=True)
    
 
