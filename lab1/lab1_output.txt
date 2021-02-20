@@ -1,13 +1,19 @@
-Top x number of entries from the dataset in markdown format
-|    |   order_id |   quantity | item_name                             | choice_description                                                         | item_price   |
-|---:|-----------:|-----------:|:--------------------------------------|:---------------------------------------------------------------------------|:-------------|
-|  0 |          1 |          1 | Chips and Fresh Tomato Salsa          | nan                                                                        | $2.39        |
-|  1 |          1 |          1 | Izze                                  | [Clementine]                                                               | $3.39        |
-|  2 |          1 |          1 | Nantucket Nectar                      | [Apple]                                                                    | $3.39        |
-|  3 |          1 |          1 | Chips and Tomatillo-Green Chili Salsa | nan                                                                        | $2.39        |
-|  4 |          2 |          2 | Chicken Bowl                          | [Tomatillo-Red Chili Salsa (Hot), [Black Beans, Rice, Cheese, Sour Cream]] | $16.98       |
-The number of observations/entries in the dataset :  4622
-data info
+|    |   order_id |   quantity | item_name                             | choice_description                                                                                                 | item_price   |
+|---:|-----------:|-----------:|:--------------------------------------|:-------------------------------------------------------------------------------------------------------------------|:-------------|
+|  0 |          1 |          1 | Chips and Fresh Tomato Salsa          | nan                                                                                                                | $2.39        |
+|  1 |          1 |          1 | Izze                                  | [Clementine]                                                                                                       | $3.39        |
+|  2 |          1 |          1 | Nantucket Nectar                      | [Apple]                                                                                                            | $3.39        |
+|  3 |          1 |          1 | Chips and Tomatillo-Green Chili Salsa | nan                                                                                                                | $2.39        |
+|  4 |          2 |          2 | Chicken Bowl                          | [Tomatillo-Red Chili Salsa (Hot), [Black Beans, Rice, Cheese, Sour Cream]]                                         | $16.98       |
+|  5 |          3 |          1 | Chicken Bowl                          | [Fresh Tomato Salsa (Mild), [Rice, Cheese, Sour Cream, Guacamole, Lettuce]]                                        | $10.98       |
+|  6 |          3 |          1 | Side of Chips                         | nan                                                                                                                | $1.69        |
+|  7 |          4 |          1 | Steak Burrito                         | [Tomatillo Red Chili Salsa, [Fajita Vegetables, Black Beans, Pinto Beans, Cheese, Sour Cream, Guacamole, Lettuce]] | $11.75       |
+|  8 |          4 |          1 | Steak Soft Tacos                      | [Tomatillo Green Chili Salsa, [Pinto Beans, Cheese, Sour Cream, Lettuce]]                                          | $9.25        |
+|  9 |          5 |          1 | Steak Burrito                         | [Fresh Tomato Salsa, [Rice, Black Beans, Pinto Beans, Cheese, Sour Cream, Lettuce]]                                | $9.25        |
+Number of of observations/entries in the dataset -- 
+4622
+Dataframe info
+
 <class 'pandas.core.frame.DataFrame'>
 RangeIndex: 4622 entries, 0 to 4621
 Data columns (total 5 columns):
@@ -20,6 +26,38 @@ Data columns (total 5 columns):
  4   item_price          4622 non-null   object
 dtypes: int64(2), object(3)
 memory usage: 180.7+ KB
-5
-Names of all columns
-['order_id', 'quantity', 'item_name', 'choice_description', 'item_price']
+Name of All the columns
+order_id
+quantity
+item_name
+choice_description
+item_price
+Most ordered item -  Chicken Bowl
+761
+Total items ordered - 4972
+Total sales =  39237.02
+Total number of orders placed -  1834
+Total sales =  39237.02
+Total number of orders placed -  1834
+Average sales amount per order -  21.39423118865867
+Number of different items sold -  50
+              item_name  popularity_value
+4          Chicken Bowl               726
+11      Chicken Burrito               553
+8   Chips and Guacamole               479
+6         Steak Burrito               368
+33    Canned Soft Drink               301
+      order_id  quantity  ... item_price total_sales
+0            1         1  ...       2.39        2.39
+1            1         1  ...       3.39        3.39
+2            1         1  ...       3.39        3.39
+3            1         1  ...       2.39        2.39
+4            2         2  ...      16.98       33.96
+...        ...       ...  ...        ...         ...
+4617      1833         1  ...      11.75       11.75
+4618      1833         1  ...      11.75       11.75
+4619      1834         1  ...      11.25       11.25
+4620      1834         1  ...       8.75        8.75
+4621      1834         1  ...       8.75        8.75
+
+[4622 rows x 6 columns]
