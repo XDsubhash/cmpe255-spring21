@@ -1,0 +1,6 @@
+| Experiment                     | Accuracy                       | Confusion Matrix               | Comment                        |
+|-----------------------------------------------------------------------------------------------------------------------------------|
+| Baseline                       | 0.6771653543307087             | [[146,24], [58,26]]            | baseline                       | 
+| Solution 1                     | 0.7716535433070866             | [[154,16], [42,42]]            | Include glucose and pedigree   | 
+| Solution 2                     | 0.7834645669291339             | [[155,15], [40,44]]            | Include all columns            | 
+| Solution 3                     | 0.8149606299212598             | [[158,13], [34,49]]            | Disable shuffle during split   | 
